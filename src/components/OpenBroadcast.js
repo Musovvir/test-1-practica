@@ -7,7 +7,7 @@ function OpenBroadcast() {
 
   return <div>
       {broadcasts.map(broadcast => {
-          return <Broadcast broadcast={broadcast}/>
+          // return <Broadcast broadcast={broadcast}/>
       })}
   </div>;
 }
