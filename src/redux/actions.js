@@ -3,7 +3,7 @@ export function loadBroadcasts() {
     dispatch({ type: "load_broadcasts_start" });
 
     fetch("http://151.248.117.7:5005/api/onlines/")
-      .then((responce) => responce.json())
+      .then((response) => response.json())
       .then((json) => {
         dispatch({
           type: "load_broadcasts_success",
@@ -18,7 +18,7 @@ export function loadRecords(id) {
     dispatch({ type: "load_records_start", payload: id });
 
     fetch(`http://151.248.117.7:5005/api/onlines/${id}`)
-      .then((responce) => responce.json())
+      .then((response) => response.json())
       .then((json) => {
         dispatch({
           type: "load_records_success",

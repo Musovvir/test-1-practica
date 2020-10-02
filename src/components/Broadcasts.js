@@ -4,10 +4,15 @@ import "./Broadcasts.css";
 
 function Broadcasts() {
   const broadcasts = useSelector((state) => state.broadcasts.broadcasts);
+
   return (
     <div>
       {broadcasts.map((broadcast) => {
-        return <div className="title">{broadcast.title}</div>;
+        return (
+          <div key={broadcasts.id} className="title">
+            {broadcast.title}
+          </div>
+        );
       })}
     </div>
   );
