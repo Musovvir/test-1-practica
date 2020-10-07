@@ -1,5 +1,5 @@
 const initialState = {
-  loadRecords: true,
+  loading: false,
   records: [],
 };
 
@@ -8,13 +8,13 @@ export default function records(state = initialState, action) {
     case "load_records_start":
       return {
         ...state,
-        loadRecords: true,
+        loading: true,
       };
 
     case "load_records_success":
       return {
         ...state,
-        loadRecords: false,
+        loading: false,
         records: action.payload,
       };
 

@@ -12,6 +12,12 @@ export default function broadcasts(state = initialState, action) {
         loading: true,
       };
 
+    case "set_opened":
+      return {
+        ...state,
+        opened: action.payload
+      }
+
     case "load_broadcasts_success":
       return {
         ...state,

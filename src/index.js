@@ -9,7 +9,7 @@ import broadcasts from "./redux/broadcasts";
 import records from "./redux/records";
 
 const logger = createLogger({
-  collapse: true,
+  collapsed: true,
   diff: true,
 });
 

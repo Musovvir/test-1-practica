@@ -15,7 +15,8 @@ export function loadBroadcasts() {
 
 export function loadRecords(id) {
   return (dispatch) => {
-    dispatch({ type: "load_records_start", payload: id });
+    dispatch({ type: "load_records_start" });
+    dispatch({ type: "set_opened", payload: id });
 
     fetch(`http://151.248.117.7:5005/api/onlines/${id}`)
       .then((response) => response.json())
