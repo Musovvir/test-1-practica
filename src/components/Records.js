@@ -21,13 +21,13 @@ function Records() {
     return <div className="choice">Идет загрузка...</div>;
   }
 
-  return(
-      <div>
-          {records.map(record => {
-              return <Record record={record}/>
-          })}
-      </div>
-  )
+  return (
+    <div>
+      {records.map((record) => {
+        return <Record record={record} />;
+      })}
+    </div>
+  );
 }
 
 export default Records;

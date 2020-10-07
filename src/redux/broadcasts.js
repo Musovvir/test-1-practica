@@ -15,8 +15,8 @@ export default function broadcasts(state = initialState, action) {
     case "set_opened":
       return {
         ...state,
-        opened: action.payload
-      }
+        opened: action.payload,
+      };
 
     case "load_broadcasts_success":
       return {

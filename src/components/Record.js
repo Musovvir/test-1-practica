@@ -1,7 +1,7 @@
 import React from "react";
-import "./Record.css"
+import "./Record.css";
 
-function Record({record}) {
+function Record({ record }) {
   return (
     <div className="record">
       <div className="titleRecord">{record.title}</div>

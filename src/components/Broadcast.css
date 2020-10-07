@@ -1,11 +1,12 @@
 .title {
-    margin-bottom: 5px;
-    padding: 5px;
-    border-radius: 2px;
-    box-shadow: 0 0 30px -1px cornsilk;
-    border: 1px solid white;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  box-shadow: 0 0 30px -1px cornsilk;
+  border: 1px solid white;
 }
 
-.title:hover, .active {
-    border: 1px solid #edfffd;
+.title:hover,
+.active {
+  border: 1px solid #edfffd;
 }
